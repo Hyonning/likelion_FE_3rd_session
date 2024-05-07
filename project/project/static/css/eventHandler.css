@@ -1,0 +1,52 @@
+.title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 50px 0 20px 0;
+}
+button{
+  font-size: 1.5rem;
+}
+p{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.checkbox-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #ffe1c8;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+.radio-group{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #d2fae6;
+}
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.select-container select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+

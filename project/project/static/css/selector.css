@@ -1,0 +1,22 @@
+a{
+  color: #b9e4ff;
+}
+.title{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 50px 0 20px 0;
+}
+.text_change{
+  display: flex;
+  padding: 30px;
+  margin-bottom: 60px;
+  gap: 30px;
+  color: beige;
+  font-size: 1.5rem;
+}
+.attribute_change{
+  padding: 20px;
+  color: rgb(255, 218, 218);
+  font-size: 1.2rem;
+  line-height: 1.5;
+}

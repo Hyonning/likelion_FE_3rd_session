@@ -1,0 +1,74 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/eventHandler.css' %}"
+/>
+<!-- ========= Event Handler ========= -->
+<div class="title">Event Handler</div>
+<!-- inline 방식 -->
+<button onclick="alert('클릭되었습니다.');">클릭!</button>
+
+<!-- addEventListener 방식 -->
+<button id="item">클릭해봐!</button>
+
+<!-- ========= checkbox 제어 ========= -->
+<!-- project - project - static - javaScript - eventHandler.js -->
+<div class="title">체크박스 제어 - 콘솔을 확인하세요</div>
+<div class="checkbox-group">
+  <label for="frontend">
+    <input type="checkbox" name="group" id="frontend" />
+    프론트엔드
+  </label>
+  <label for="backend">
+    <input type="checkbox" name="group" id="backend" />
+    백엔드
+  </label>
+  <label for="UIUX">
+    <input type="checkbox" name="group" id="UIUX" />
+    기획/디자인
+  </label>
+</div>
+
+<!-- ========= radio 제어 ========= -->
+<!-- project - project - static - javaScript - eventHandler.js -->
+<div class="title">라디오버튼 제어 - 콘솔을 확인하세요</div>
+<p>"내가 쩰로 조아하는 아이스크림은? 😋"</p>
+<div class="radio-group">
+  <label for="item1">
+    <input type="radio" name="ice" id="item1" value="사랑에빠진딸기" checked />
+    사랑에빠진딸기
+  </label>
+  <label for="item2">
+    <input type="radio" name="ice" id="item2" value="엄마는외계인" />
+    엄마는외계인
+  </label>
+  <label for="item3">
+    <input type="radio" name="ice" id="item3" value="레인보우샤베트" />
+    레인보우샤베트
+  </label>
+  <label for="item4">
+    <input type="radio" name="ice" id="item4" value="민트초코" />
+    민트초코
+  </label>
+</div>
+
+<!-- ========= select 제어 ========= -->
+<!-- project - project - static - javaScript - eventHandler.js -->
+<div class="title">셀렉트 제어 - 콘솔을 확인하세요</div>
+<div class="select-container">
+  <select>
+    <option value="mon">월요일</option>
+    <option value="tue">화요일</option>
+    <option value="wed">수요일</option>
+    <option value="thu">목요일</option>
+    <option value="fri">금요일</option>
+    <option value="sat">토요일</option>
+    <option value="sun">일요일</option>
+  </select>
+</div>
+
+<!-- Django 프로젝트 js 적용 -->
+<script src="{% static 'javaScript/eventHandler.js' %}"></script>
+
+{% endblock %}

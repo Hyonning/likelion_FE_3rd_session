@@ -1,0 +1,74 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/practice.css' %}" />
+<div class="container">
+  <div class="wrapper">
+    <div class="title">🦁 멋사 마라탕 주문서🦁</div>
+    <div class="item">마라탕 재료 고르기</div>
+
+    <!-- 재료 라디오 버튼 -->
+    <div class="radio-group">
+      <label for="고기">
+        <input type="radio" name="food" id="고기" value="고기" checked />
+        고기
+      </label>
+      <label for="소시지">
+        <input type="radio" name="food" id="소시지" value="소시지" />
+        소시지
+      </label>
+      <label for="채소">
+        <input type="radio" name="food" id="채소" value="채소" />
+        채소
+      </label>
+      <label for="버섯">
+        <input type="radio" name="food" id="버섯" value="버섯" />
+        버섯
+      </label>
+    </div>
+    <!-- 맵기 정도 셀렉트 버튼 -->
+    <div class="select-container">
+      <div class="item">맵기 정도</div>
+      <select id="spicy">
+        <option value="순한만">순한맛</option>
+        <option value="신라면">신라면</option>
+        <option value="불닭볶음면" selected>불닭볶음면</option>
+        <option value="폭탄맛">폭탄맛</option>
+        <option value="사망맛">사망맛</option>
+      </select>
+      <!-- 얼얼 정도 셀렉트 버튼 -->
+      <div class="item">얼얼 정도</div>
+      <select id="burning">
+        <option value="없음">없음</option>
+        <option value="약간">약간</option>
+        <option value="보통">보통</option>
+        <option value="많이" selected>많이</option>
+        <option value="아주많이">아주많이</option>
+      </select>
+    </div>
+
+    <!-- 주문서 접수 버튼 -->
+    <button id="complete">주문서 접수</button>
+  </div>
+
+  <!-- --------------------------------------- -->
+  <!-- --------------------------------------- -->
+  <!-- 아래의 부분의 주문 목록을 JS 코드로 수정해주세요 -->
+
+  <div>
+    <div class="sub-title">주문 목록</div>
+    <ul>
+      <li>재료</li>
+      <div id="selected_food">선택한 재료가 입력되는 공간입니다.</div>
+      <li>맵기 정도</li>
+      <div id="selected_spicy">선택한 맵기 정도가 입력되는 공간입니다.</div>
+      <li>얼얼 정도</li>
+      <div id="selected_burning">선택한 얼얼 정도가 입력되는 공간입니다.</div>
+    </ul>
+  </div>
+
+  <!-- --------------------------------------- -->
+  <!-- --------------------------------------- -->
+</div>
+<!-- Django 프로젝트 js 적용 -->
+<script src="{% static 'javaScript/practice.js' %}"></script>
+
+{% endblock %}

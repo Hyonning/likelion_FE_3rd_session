@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/selector.css' %}" />
+
+<!-- [ Element Selector 실습 ] -->
+<!-- 실습을 위한 JS 코드는 아래 경로의 selector.js 파일에 작성하세요 -->
+<!-- project - project - static - javaScript - selector.js -->
+
+<div class="title">1. Element 찾기</div>
+<h2 id="element1">프론트엔드 5주차 JS 심화</h1>
+<a class="element2" href="https://likelion-dgu.com">멋사랑헤</a>
+<p id="element3">JS는 즐거워 재밌어</p>
+
+<hr />
+
+<!-- ----------------------------------------------------- -->
+<!-- ----------------------------------------------------- -->
+
+<!-- [ 텍스트 변경하기 ] -->
+<!-- 실습을 위한 JS 코드는 아래 경로의 mainpage.js 파일에 작성하세요 -->
+<!-- project - project - static - javaScript - mainpage.js -->
+
+<div class="title">2. 틀린 단어 찾기</div>
+<div class="text_change">
+  <div id="toy">장난감</div>
+  <div id="dog">강아디</div>
+  <div id="cat">고양이</div>
+  <div id="phone">ㅎ대폰</div>
+  <div id="jeans">청바지</div>
+  <div id="water">믈</div>
+</div>
+<hr />
+<div class="margin"></div>
+
+<!-- ----------------------------------------------------- -->
+<!-- ----------------------------------------------------- -->
+
+<!-- [ 스타일 & 속성 변경하기 ] -->
+<!-- 실습을 위한 JS 코드는 아래 경로의 mainpage.js 파일에 작성하세요 -->
+<!-- project - project - static - javaScript - mainpage.js -->
+
+
+<div class="title">3. 스타일 & 속성 변경하기</div>
+<div class="attribute_change">
+  <div class="quest1">글자색을 빨간색으로 바꿔주세요</div>
+  <div class="quest2">이 부분은 공간 유지하고, 내용이 안 보이게 해주세요</div>
+  <div class="quest3">배경색을 파란색으로 바꿔주세요</div>
+  <div class="quest4">이 부분은 아예 사라지게 해주세요</div>
+  
+  <a class="quest5" href="https://likelion-dgu.com">네이버로 이동되게 변경해주세요</div>
+</div>
+
+<!-- Django 프로젝트 js 적용 -->
+<script src="{% static 'javaScript/selector.js' %}"></script>
+
+{% endblock %}

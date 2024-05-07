@@ -1,0 +1,80 @@
+.container{
+  display: flex;
+  align-items: center;
+}
+.wrapper{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(229, 229, 229);
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin: 50px;
+  border-radius: 10px;
+}
+
+.title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 30px 0;
+}
+.item{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgb(255, 129, 19);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#complete{
+  width: 400px;
+  height: 40px;
+  font-size: 1.3rem;
+  margin-top: 50px;
+  border-radius: 4px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio-group input {
+  margin-right: 10px;
+}
+
+.select-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select-container select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.sub-title{
+  font-size: 2rem;
+}
+li{
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+ul div{
+  font-size: 1.4rem;
+  color: deeppink;
+}
